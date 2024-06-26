@@ -1,0 +1,166 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #d65f61;
+    color: #fff;
+    padding: 10px 0;
+
+}
+
+.header .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header .content-header h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .content-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header .content-header ul li {
+    margin-right: 20px;
+}
+
+.header .content-header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .content-header ul li a.active,
+.header .content-header ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-bar .search-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-bar .search-btn:hover {
+    background-color: #45a049;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.section-1,
+.section-2 {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section-1 h2,
+.section-2 h2 {
+    margin-top: 0;
+}
+
+.input-div {
+    margin-bottom: 15px;
+}
+
+.input-div label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-div input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.add-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #45a049;
+}
+
+.table-div {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+.actions-btns {
+    padding: 5px 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.actions-btns.edit {
+    background-color: #4CAF50;
+}
+
+.actions-btns.edit:hover {
+    background-color: #45a049;
+}
+
+.actions-btns.delete {
+    background-color: #f44336;
+}
+
+.actions-btns.delete:hover {
+    background-color: #e41e1e;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Update Todo</title>
+</head>
+<body>
+    <h1>Update Todo</h1>
+    <div class="container">
+        <div class="content section-1">
+            <h2>Edit your todo</h2>
+            <hr />
+            <form method="POST" action="/update/{{ todo.id }}" class="form" name="form">
+                <div class="input-div">
+                    <label for="title">Enter your ToDo Title</label>
+                    <input 
+                        type="text"
+                        name="title"
+                        id="title"
+                        class="input-text"
+                        placeholder="Enter a title"
+                        value="{{ todo.title }}"
+                    />
+                </div>
+                <div class="input-div">
+                    <label for="description">Describe your todo here</label>
+                    <input
+                        type="text"
+                        name="description"
+                        class="input-text"
+                        id="description"
+                        placeholder="Enter a description"
+                        value="{{ todo.desc }}"
+                    />
+                </div>
+                <button class="add-btn" type="submit">Update</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
